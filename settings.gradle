@@ -1,0 +1,3 @@
+include ':clearTeste'
+include ':app'
+rootProject.name = "ClearTeste"
