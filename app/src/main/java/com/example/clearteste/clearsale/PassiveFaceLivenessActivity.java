@@ -1,6 +1,5 @@
 package com.example.clearteste.clearsale;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -14,9 +13,8 @@ import com.combateafraude.helpers.sdk.failure.PermissionReason;
 import com.combateafraude.helpers.sdk.failure.SDKFailure;
 import com.combateafraude.helpers.sdk.failure.ServerReason;
 import com.combateafraude.helpers.sdk.failure.StorageReason;
-import com.combateafraude.passivefaceliveness.PassiveFaceLivenessResult;
 
-import static com.example.clearteste.clearsale.PassiveFaceLiveness.*;
+import static com.example.clearteste.clearsale.PassiveFaceLiveness.PARAMETER_NAME;
 
 public class PassiveFaceLivenessActivity extends com.combateafraude.passivefaceliveness.PassiveFaceLivenessActivity {
 
@@ -41,8 +39,6 @@ public class PassiveFaceLivenessActivity extends com.combateafraude.passivefacel
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-
-
         // Discover if the SDK had finished with some result
         if (resultCode == RESULT_OK && data != null) {
             // Discover what SDK had finished
