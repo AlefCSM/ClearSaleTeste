@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 
 import static com.example.clearteste.PassiveFaceLiveness.PARAMETER_NAME;
 
-public class PassiveFaceLivenessActivity extends Activity {
+public class PassiveFaceLivenessActivity extends com.combateafraude.passivefaceliveness.PassiveFaceLivenessActivity {
 
     // REQUEST_CODES to identify what activity is been started and know which result get in onActivityResult method
     private static final int PASSIVE_FACE_LIVENESS_CODE = 2;
@@ -17,6 +17,7 @@ public class PassiveFaceLivenessActivity extends Activity {
     public PassiveFaceLivenessActivity() {
     }
 
+    @Override
     public void onCreate(Bundle var1) {
         PassiveFaceLiveness passiveFaceLiveness = (PassiveFaceLiveness) this.getIntent().getSerializableExtra("PassiveFaceLiveness");
 
