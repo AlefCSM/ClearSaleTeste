@@ -24,6 +24,7 @@ public class PassiveFaceLivenessActivity extends com.combateafraude.passivefacel
     public PassiveFaceLivenessActivity() {
     }
 
+    @Override
     public void onCreate(Bundle var1) {
 
         PassiveFaceLiveness passiveFaceLiveness = (PassiveFaceLiveness) this.getIntent().getSerializableExtra("PassiveFaceLiveness");

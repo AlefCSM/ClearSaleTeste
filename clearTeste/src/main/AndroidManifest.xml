@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.clearteste">
+    package="com.example.clearteste"
+    android:versionCode="1">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
 
     <application>
         <activity
-            android:name="com.example.clearteste.PassiveFaceLivenessActivity"
+            android:name=".PassiveFaceLivenessActivity"
             android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="face" />
     </application>
+
 </manifest>
